@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 
-import { MyComponent } from "../src/MyComponent";
+import { Accordion } from "../src/Accordion";
 
-test("MyComponent displays correctoy", () => {
-	render(<MyComponent title="My Component" />);
+test("Accordion displays correctoy", () => {
+	render(<Accordion title="Accordion" />);
 
-	const heading = screen.getByText(/My Component/i);
+	const heading = screen.getByText(/Accordion/i);
 
 	expect(heading).toBeInTheDocument();
 });

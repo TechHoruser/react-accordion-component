@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  <⚡⚛️> Vite React Library Template
+  <⚡⚛️> Vite React Accordion Template
 </h1>
 
 <p align="center">
