@@ -108,7 +108,7 @@ Read the [full documentation on the npm-publish action](https://github.com/JS-De
 
 - [TypeScript](https://www.typescriptlang.org)
 - [Storybook](https://storybook.js.org/)
-- [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured with the [🤏 Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)
+- [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured
 - [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the unit tests
 - [Cypress](https://www.cypress.io/) with [Testing Library](https://testing-library.com/docs/cypress-testing-library) for acceptance/component tests
 - [GitHub Action Workflows](https://github.com/features/actions) set up to run tests and linting on push
