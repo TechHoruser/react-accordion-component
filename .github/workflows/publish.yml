@@ -29,4 +29,5 @@ jobs:
       - name: 🚀 Publish to npm
         uses: JS-DevTools/npm-publish@v1
         with:
+          access: public
           token: ${{ secrets.NPM_TOKEN }}
