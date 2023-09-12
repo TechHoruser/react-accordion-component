@@ -102,7 +102,7 @@
   "license": "MIT",
   "main": "./dist/my-component.umd.cjs",
   "module": "./dist/my-component.js",
-  "name": "@techhoruser/typescript-react-library-template",
+  "name": "@techhoruser/react-accordion-component",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -120,5 +120,5 @@
   },
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "1.0.0"
+  "version": "0.0.2"
 }
