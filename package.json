@@ -107,6 +107,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "private": false,
   "scripts": {
     "build": "vite build",
     "build:docs": "storybook build",
