@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/TechHoruser/typescript-react-library-template/actions/workflows/ci.yml"><img src="https://github.com/TechHoruser/typescript-react-library-template/actions/workflows/ci.yml/badge.svg" alt="Build status"/></a>
+    <a href="https://github.com/TechHoruser/react-accordion-component/actions/workflows/ci.yml"><img src="https://github.com/TechHoruser/react-accordion-component/actions/workflows/ci.yml/badge.svg" alt="Build status"/></a>
 </p>
 
 <p align="center">
