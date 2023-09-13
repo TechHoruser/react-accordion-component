@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import { Accordion } from "../src/Accordion";
 
-test("Accordion displays correctoy", () => {
+test("Accordion displays correctly", () => {
 	render(<Accordion
 		header={<h1>Accordion</h1>}
 		content={<p>

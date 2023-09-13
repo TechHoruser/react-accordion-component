@@ -1,5 +1,5 @@
-import "./Accordion.scss";
 import { useEffect, useState } from "react";
+import "./Accordion.scss";
 
 export interface AccordionProps {
 	header: JSX.Element;
@@ -19,14 +19,12 @@ export function Accordion({
 	}, [collapsed]);
 
 	return (
-		<div className="accordion">
+		<div className="accordion"><div
+			className="accordion-header"
+			onClick={() => setCollapsedStatus(!collapsedStatus)}
+		>{header}</div>
 			<div
-				className="accordion-header"
-				onClick={() => setCollapsedStatus(!collapsedStatus)}
-			>{header}</div>
-			<div
-				className={`accordion-content ${collapsedStatus ? "hidden" : ""}`}
-			>{content}</div>
+				className={`accordion-content ${collapsedStatus ? "hidden" : ""}`}>{content}</div>
 		</div>
 	);
 }
