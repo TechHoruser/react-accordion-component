@@ -14,6 +14,7 @@ export function Accordion({
 	return (
 		<div className="accordion"><div
 			className="accordion-header"
+			onClick={() => collapsed = !collapsed}
 		>{header}</div>
 			<div
 				className={`accordion-content ${collapsed ? "hidden" : ""}`}>{content}</div>
