@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Accordion.scss";
 
 export interface AccordionProps {
@@ -13,6 +13,10 @@ export function Accordion({
 	collapsed = true,
 }: AccordionProps): JSX.Element {
 	const [collapsedStatus, setCollapsedStatus] = useState(collapsed);
+
+	useEffect(() => {
+		setCollapsedStatus(collapsed);
+	}, [collapsed]);
 
 	return (
 		<div className="accordion"><div
