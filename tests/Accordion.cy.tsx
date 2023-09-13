@@ -93,4 +93,27 @@ describe("<Accordion />", () => {
       .should("be.visible")
       ;
   });
+
+  // it("onChangeProp", () => {
+  //   cy.mount(
+  //     <Accordion
+  //       header={<h1>Hola Mundo</h1>}
+  //       content={
+  //         <p>
+  //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+  //           laudantium eveniet. Nulla facilis nostrum inventore, aperiam
+  //           laudantium placeat ? Distinctio, facilis ? Placeat commodi quibusdam
+  //           maxime illum quo dolorem corporis incidunt asperiores. 4
+  //         </p>
+  //       }
+  //     />
+  //   );
+
+  //   cy.get('.accordion-header').parent()
+  //     .invoke("prop", "collapsed", false);
+  //   cy.get('.accordion-content')
+  //     .should("not.have.class", "hidden")
+  //     .should("be.visible")
+  //     ;
+  // });
 });
