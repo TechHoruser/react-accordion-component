@@ -24,4 +24,47 @@ describe("<Accordion />", () => {
     cy.get('.accordion-content');
     // TODO: check if the same element
   });
+
+  it("defaultCollapsed", () => {
+    cy.mount(
+      <Accordion
+        header={<h1>Hola Mundo</h1>}
+        content={
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+            laudantium eveniet. Nulla facilis nostrum inventore, aperiam
+            laudantium placeat ? Distinctio, facilis ? Placeat commodi quibusdam
+            maxime illum quo dolorem corporis incidunt asperiores. 2
+          </p>
+        }
+      />
+    );
+
+    cy.get('.accordion-content')
+      .should("have.class", "hidden")
+      .should("not.be.visible")
+      ;
+  });
+
+  it("defaultVisible", () => {
+    cy.mount(
+      <Accordion
+        header={<h1>Hola Mundo</h1>}
+        content={
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+            laudantium eveniet. Nulla facilis nostrum inventore, aperiam
+            laudantium placeat ? Distinctio, facilis ? Placeat commodi quibusdam
+            maxime illum quo dolorem corporis incidunt asperiores. 3
+          </p>
+        }
+        collapsed={false}
+      />
+    );
+
+    cy.get('.accordion-content')
+      .should("not.have.class", "hidden")
+      .should("be.visible")
+      ;
+  });
 });
