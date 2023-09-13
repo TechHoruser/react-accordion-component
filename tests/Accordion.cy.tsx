@@ -16,7 +16,12 @@ describe("<Accordion />", () => {
       />
     );
 
-    cy.findByText(/Hola Mundo/i);
-    cy.findByText(/Lorem ipsum dolor sit amet consectetur/i);
+    cy.findByText(/Hola Mundo/i).parent();
+    cy.get('.accordion-header');
+    // TODO: check if the same element
+
+    cy.findByText(/Lorem ipsum dolor sit amet consectetur/i).parent();
+    cy.get('.accordion-content');
+    // TODO: check if the same element
   });
 });
